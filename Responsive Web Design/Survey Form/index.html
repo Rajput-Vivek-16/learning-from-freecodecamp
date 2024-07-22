@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thanks for your valuable time to fill the form that motivates us to improve the platform</p>
+
+    <div class="form">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="username" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="age" id="number" placeholder="Enter your Age" min="10" max="99">
+
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" name="role" required>
+                <option value="">Select current role</option>
+                <option value="Student">Student</option>
+                <option value="FullTimeJob">Full Time Job</option>
+                <option value="FullTimeLearner">Full Time Learner</option>
+                <option value="PreferNottosay">Prefer Not to say</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <input type="radio" name="recommend" id="Definitely" value="Definitely" required>
+            <label for="Definitely">Definitely</label>
+            <input type="radio" name="recommend" id="Maybe" value="Maybe" required>
+            <label for="Maybe">Maybe</label>
+            <input type="radio" name="recommend" id="Notsure" value="Notsure" required>
+            <label for="Notsure">Not sure</label>
+
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <input type="checkbox" id="Front-endProjects" name="improvements" value="Front-endProjects">
+            <label for="Front-endProjects">Front-end Projects</label>
+            <input type="checkbox" id="Back-endProjects" name="improvements" value="Back-endProjects">
+            <label for="Back-endProjects">Back-end Projects</label>
+            <input type="checkbox" id="DataVisualization" name="improvements" value="DataVisualization">
+            <label for="DataVisualization">Data Visualization</label>
+            <input type="checkbox" id="Challenges" name="improvements" value="Challenges">
+            <label for="Challenges">Challenges</label>
+            <input type="checkbox" id="OpenSourceCommunity" name="improvements" value="OpenSourceCommunity">
+            <label for="OpenSourceCommunity">Open Source Community</label>
+            <input type="checkbox" id="Gitterhelprooms" name="improvements" value="Gitterhelprooms">
+            <label for="Gitterhelprooms">Gitter help rooms</label>
+            <input type="checkbox" id="Videos" name="improvements" value="Videos">
+            <label for="Videos">Videos</label>
+            <input type="checkbox" id="CityMeetups" name="improvements" value="CityMeetups">
+            <label for="CityMeetups">City Meetups</label>
+            <input type="checkbox" id="Wiki" name="improvements" value="Wiki">
+            <label for="Wiki">Wiki</label>
+            <input type="checkbox" id="Forum" name="improvements" value="Forum">
+            <label for="Forum">Forum</label>
+            <input type="checkbox" id="AdditionalCourses" name="improvements" value="AdditionalCourses">
+            <label for="AdditionalCourses">Additional Courses</label>
+            <hr>
+
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
